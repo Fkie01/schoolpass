@@ -9,7 +9,7 @@
 	<script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/5J64WqrEZ1PF6XiA/",
+				url:"https://api.apispreadsheets.com/data/6XjqYCDPSUSONt7h/",
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
@@ -23,17 +23,19 @@
 	</script>
 </head>
 <body>
+	<center>
 	<form id="myForm">
 		<label>teachername</label>
 		<input name="teachername" />
-		<br/>
+		<br/> <br>
 		<label>studentid</label>
 		<input name="studentid" />
-		<br/>
+		<br/><br>
 		<label>Time</label>
-		<input name="datetime" />
-		<br/>
+		<input name="Time" />
+		<br/><br>
 	</form>
 	<button onclick='SubForm()'>Submit</button>
+</center>
 </body>
 </html>
